@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.mjs",
     "lint": "eslint .",
-    "export": "next export",
     "out": "next build && next export && touch ./out/.nojekyll",
     "predeploy": "npm run out",
     "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
