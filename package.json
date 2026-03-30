@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.mjs",
     "lint": "eslint .",
-    "out": "next build ./out/.nojekyll",
-    "predeploy": "npm run out",
+    "out": "next build ",
+    "predeploy": "npm run build",
     "deploy": "npm run predeploy && gh-pages -d out --dotfiles"
   },
   "dependencies": {
